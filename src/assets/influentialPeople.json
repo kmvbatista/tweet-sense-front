@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Donald Trump",
+    "photoUrl": "https://www.whitehouse.gov/wp-content/uploads/2017/11/President-Trump-Official-Portrait-200x200.jpg",
+    "pastCharts": [
+      {
+        "link": "https://public.tableau.com/views/GlobalAIHackathon/Story1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link&:showVizHome=no&embed=true"
+      }
+    ],
+    "predictionsCharts": [
+      {
+        "title": "Great graph",
+        "link": "https://public.tableau.com/views/Resume_15692075644260/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link&:showVizHome=no&embed=true"
+      },
+      {
+        "title": "Great graph",
+        "link": "https://public.tableau.com/views/Resume_15692075644260/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link&:showVizHome=no&embed=true"
+      }
+    ]
+  },
+  {
+    "name": "Barack Obama",
+    "photoUrl": "https://cdn.britannica.com/s:800x450,c:crop/43/172743-138-545C299D/overview-Barack-Obama.jpg"
+  },
+  {
+    "name": "Elon Musk",
+    "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfy4DM-61XnP9hC5H-sLuzSID7bbvrux7dNw&usqp=CAU"
+  },
+  {
+    "name": "Joe Biden",
+    "photoUrl": "https://api.time.com/wp-content/uploads/2019/09/joe-biden-ukraine-fundraising.jpg"
+  },
+  {
+    "name": "Donald Trump",
+    "photoUrl": "https://www.whitehouse.gov/wp-content/uploads/2017/11/President-Trump-Official-Portrait-200x200.jpg"
+  },
+  {
+    "name": "Barack Obama",
+    "photoUrl": "https://cdn.britannica.com/s:800x450,c:crop/43/172743-138-545C299D/overview-Barack-Obama.jpg"
+  },
+  {
+    "name": "Elon Musk",
+    "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfy4DM-61XnP9hC5H-sLuzSID7bbvrux7dNw&usqp=CAU"
+  }
+]
