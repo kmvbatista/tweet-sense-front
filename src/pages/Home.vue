@@ -27,8 +27,8 @@ export default {};
 }
 .detail {
   position: absolute;
-  height: 20em;
-  width: 20em;
+  height: 40%;
+  width: auto;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -63,5 +63,21 @@ export default {};
   width: 100%;
   background-color: var(--color-yellow);
   height: 9px;
+}
+@media only screen and (max-width: 600px) {
+  .detail {
+    height: 30%;
+  }
+  .right {
+    top: 0;
+    right: 50%;
+  }
+  .left {
+    left: 0;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 50%);
+    top: unset;
+  }
 }
 </style>

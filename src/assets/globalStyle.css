@@ -1,0 +1,26 @@
+:root {
+  --color-yellow: #fcf050;
+  --color-green: #37798c;
+}
+@font-face {
+  font-family: League-Spartan-bold;
+  src: url('./LeagueSpartan-Bold.otf') format('opentype');
+}
+
+html,
+body {
+  font-family: League-Spartan-bold;
+}
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 80%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
