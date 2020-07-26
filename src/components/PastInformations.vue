@@ -10,7 +10,6 @@
         marginheight="0"
         marginwidth="0"
         scrolling="no"
-        style="display: block; width: 827px; height: 1196px; visibility: visible;"
         :src="pastChart.link"
       ></iframe>
     </div>
@@ -21,5 +20,19 @@ export default {
   props: ["person"],
 };
 </script>
-<style scoped>
+<style>
+iframe {
+  display: block;
+  width: 827px;
+  height: 1196px;
+  visibility: visible;
+}
+@media only screen and (max-width: 600px) {
+  iframe {
+    width: 100%;
+  }
+  .graph {
+    width: 100%;
+  }
+}
 </style>

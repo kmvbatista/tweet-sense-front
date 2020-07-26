@@ -36,9 +36,12 @@ export default {
 .main-page {
   padding: 2em 0;
   min-height: 100vh;
-  width: 41em;
+  width: 55em;
   max-width: 100%;
   margin: 0 auto;
+}
+.central-text-box {
+  width: unset;
 }
 .people-list {
   margin-top: 2em;
@@ -61,5 +64,12 @@ export default {
 }
 .subtitle {
   color: var(--color-green);
+}
+@media screen and (max-width: 600px) {
+  .people-list {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1em;
+    font-size: 1.2em;
+  }
 }
 </style>

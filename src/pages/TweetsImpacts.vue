@@ -33,7 +33,7 @@ export default {
 </script>
 <style scoped>
 .main {
-  padding: 2em;
+  padding: 2em 0;
 }
 .title {
   color: var(--color-green);

@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from './pages/Home.vue';
 import About from './pages/About.vue';
-import Main from './pages/Main.vue';
+import ChoosePerson from './pages/ChoosePerson.vue';
 import Impacts from './pages/TweetsImpacts.vue';
 import PastInformations from './components/PastInformations.vue';
 import Predictions from './components/Predictions.vue';
@@ -21,9 +21,9 @@ const routes = [
     component: About,
   },
   {
-    path: '/main',
-    name: 'main',
-    component: Main,
+    path: '/choose-person',
+    name: 'choose-person',
+    component: ChoosePerson,
   },
   {
     path: '/impacts/:name',
