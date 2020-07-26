@@ -31,4 +31,10 @@ export default {
 .graphs-container > * {
   margin-bottom: 4em;
 }
+@media only screen and (max-width: 600px) {
+  .graphs-container {
+    width: 100%;
+    overflow: scroll;
+  }
+}
 </style>

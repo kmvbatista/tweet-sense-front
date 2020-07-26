@@ -29,7 +29,6 @@ export default {
   height: 100vh;
   width: 100vw;
   display: flex;
-  position: fixed;
   flex-direction: column;
 }
 .button {

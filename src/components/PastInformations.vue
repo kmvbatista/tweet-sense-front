@@ -29,7 +29,7 @@ iframe {
 }
 @media only screen and (max-width: 600px) {
   iframe {
-    width: 100%;
+    overflow: scroll;
   }
   .graph {
     width: 100%;

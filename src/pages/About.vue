@@ -27,7 +27,6 @@ export default {
   width: 100vw;
   display: flex;
   background-color: var(--color-yellow);
-  position: fixed;
   flex-direction: column;
 }
 .title {
