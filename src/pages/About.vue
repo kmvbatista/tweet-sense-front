@@ -28,6 +28,8 @@ export default {
   display: flex;
   background-color: var(--color-yellow);
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 .title {
   word-spacing: normal;

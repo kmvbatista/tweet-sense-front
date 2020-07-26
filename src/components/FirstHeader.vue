@@ -52,4 +52,9 @@ export default {
   width: 100%;
   transform: scaleY(1);
 }
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    font-size: 1.2em;
+  }
+}
 </style>
