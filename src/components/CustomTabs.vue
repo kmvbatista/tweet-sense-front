@@ -1,25 +1,32 @@
 <template>
-  <!-- <past-infos />
-  <predictions />-->
-  <nav class="navigation">
-    <router-link :to="{name: 'past'}" class="tab__link" @click.native="setSelectedTab('past')">
-      <div class="tab" :class="{selected: tabSelected==='past'}">Past Informations</div>
-    </router-link>
-    <router-link
-      :to="{name: 'predictions'}"
-      class="tab__link"
-      @click.native="setSelectedTab('predictions')"
-    >
-      <div class="tab" :class="{selected: tabSelected==='predictions'}">Predictions</div>
-    </router-link>
-  </nav>
+  <div>
+    <nav class="navigation">
+      <div class="tab__link" @click="setSelectedTab('past')">
+        <div class="tab" :class="{selected: tabSelected==='past'}">Past Informations</div>
+      </div>
+      <div class="tab__link" @click="setSelectedTab('predictions')">
+        <div class="tab" :class="{selected: tabSelected==='predictions'}">Predictions</div>
+      </div>
+    </nav>
+    <div class="tab-content">
+      <past-infos v-show="tabSelected==='past'" :person="person" />
+      <predictions v-show="tabSelected==='predictions'" :person="person" />
+    </div>
+  </div>
 </template>
 <script>
+import PastInfos from "./PastInformations";
+import Predictions from "./Predictions";
 export default {
   data() {
     return {
       tabSelected: "past",
     };
+  },
+  props: ["person"],
+  components: {
+    PastInfos,
+    Predictions,
   },
   methods: {
     setSelectedTab(tab) {
@@ -29,6 +36,11 @@ export default {
 };
 </script>
 <style scoped>
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 :link {
   text-decoration: none;
 }
@@ -80,8 +92,5 @@ link,
 .selected::before {
   width: 100%;
   transform: scaleY(1);
-}
-.tab:hover .selected {
-  background-color: tomato;
 }
 </style>

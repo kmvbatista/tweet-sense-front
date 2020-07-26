@@ -1,22 +1,26 @@
 <template>
-  <div class="main">
-    <div class="central-text-box">
-      <h1 class="title">{{person.name}} tweets impacts</h1>
-      <div class="horizontal-band"></div>
-    </div>
+  <div>
+    <second-header selected="choose-person" />
+    <div class="main">
+      <div class="central-text-box">
+        <h1 class="title">{{person.name}} tweets impacts</h1>
+        <div class="horizontal-band"></div>
+      </div>
 
-    <div class="photo" :style="`background-image: url(${person.photoUrl});`" />
-    <tabs></tabs>
-    <router-view :person="person" />
+      <div class="photo" :style="`background-image: url(${person.photoUrl});`" />
+      <tabs :person="person"></tabs>
+    </div>
   </div>
 </template>
 <script>
 import influentialPeople from "@/assets/influentialPeople.json";
 import Tabs from "../components/CustomTabs";
+import SecondHeader from "../components/SecondHeader";
 
 export default {
   components: {
     Tabs,
+    SecondHeader,
   },
   data() {
     return {
@@ -27,11 +31,19 @@ export default {
     this.person = influentialPeople.find(
       (x) => x.name === this.$route.params.name
     );
-    this.$router.push({ name: "past" });
   },
 };
 </script>
 <style scoped>
+.nav-bar {
+  background-color: var(--color-green);
+}
+.button {
+  color: white;
+}
+.button::before {
+  background-color: white;
+}
 .main {
   padding: 2em 0;
 }

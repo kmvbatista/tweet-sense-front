@@ -1,5 +1,6 @@
 <template>
   <div class="home-main">
+    <first-header selected="home" />
     <img class="detail left" src="@/assets/yellow-square.svg" alt="detail" />
     <img class="detail right" src="@/assets/yellow-square.svg" alt="detail" />
     <div class="central-text-box">
@@ -10,7 +11,12 @@
   </div>
 </template>
 <script>
-export default {};
+import FirstHeader from "../components/FirstHeader";
+export default {
+  components: {
+    FirstHeader,
+  },
+};
 </script>
 <style>
 .home-main {
@@ -24,6 +30,13 @@ export default {};
   width: 100vw;
   display: flex;
   position: fixed;
+  flex-direction: column;
+}
+.button {
+  /* color: var(--color-green); */
+}
+.button::before {
+  /* background-color: var(--color-green); */
 }
 .detail {
   position: absolute;
@@ -71,13 +84,11 @@ export default {};
   .right {
     top: 0;
     right: 50%;
+    display: none;
   }
   .left {
-    left: 0;
-    bottom: 0;
-    right: 50%;
-    transform: translate(50%, 50%);
-    top: unset;
+    top: 100%;
+    left: 50%;
   }
 }
 </style>

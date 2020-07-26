@@ -1,26 +1,32 @@
 <template>
-  <div class="main-page">
-    <div class="central-text-box">
-      <h1 class="title">INFLUENTIAL PEOPLE</h1>
-      <div class="horizontal-band"></div>
-      <h3 class="subtitle">CHOOSE ONE TO SEE HIS TWEETS IMPACTS</h3>
-    </div>
-    <div class="people-list">
-      <person-card
-        v-for="person in people"
-        :key="person.name"
-        :name="person.name"
-        :photoUrl="person.photoUrl"
-      />
+  <div>
+    <second-header selected="choose-person" />
+    <div class="main-page">
+      <div class="central-text-box">
+        <h1 class="title">INFLUENTIAL PEOPLE</h1>
+        <div class="horizontal-band"></div>
+        <h3 class="subtitle">CHOOSE ONE TO SEE HIS TWEETS IMPACTS</h3>
+      </div>
+      <div class="people-list">
+        <person-card
+          v-for="person in people"
+          :key="person.name"
+          :name="person.name"
+          :photoUrl="person.photoUrl"
+        />
+      </div>
     </div>
   </div>
 </template>
 <script>
 import influentialPeople from "@/assets/influentialPeople.json";
 import PersonCard from "../components/PersonCard";
+import SecondHeader from "../components/SecondHeader";
+
 export default {
   components: {
     PersonCard,
+    SecondHeader,
   },
   data() {
     return {
@@ -34,7 +40,6 @@ export default {
 </script>
 <style scoped>
 .main-page {
-  padding: 2em 0;
   min-height: 100vh;
   width: 55em;
   max-width: 100%;
@@ -56,7 +61,7 @@ export default {
 }
 .title {
   color: var(--color-green);
-  font-size: 3em;
+  font-size: 2em;
   word-spacing: normal;
 }
 .horizontal-band {
@@ -64,6 +69,7 @@ export default {
 }
 .subtitle {
   color: var(--color-green);
+  font-size: 1em;
 }
 @media screen and (max-width: 600px) {
   .people-list {

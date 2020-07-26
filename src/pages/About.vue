@@ -1,5 +1,7 @@
 <template>
   <div class="about-main">
+    <first-header selected="about" />
+
     <img class="detail left" src="@/assets/green-square.svg" alt="detail" />
     <img class="detail right" src="@/assets/green-square.svg" alt="detail" />
     <div class="central-text-box">
@@ -12,7 +14,12 @@
   </div>
 </template>
 <script>
-export default {};
+import FirstHeader from "../components/FirstHeader";
+export default {
+  components: {
+    FirstHeader,
+  },
+};
 </script>
 <style scoped>
 .about-main {
@@ -21,6 +28,7 @@ export default {};
   display: flex;
   background-color: var(--color-yellow);
   position: fixed;
+  flex-direction: column;
 }
 .title {
   word-spacing: normal;
