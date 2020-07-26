@@ -23,7 +23,7 @@ export default {
 <style>
 iframe {
   display: block;
-  width: 827px;
+  width: 1020px;
   height: 1196px;
   visibility: visible;
 }

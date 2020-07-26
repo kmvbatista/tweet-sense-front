@@ -10,7 +10,6 @@
         marginheight="0"
         marginwidth="0"
         scrolling="no"
-        style="display: block; width: 827px; height: 1196px; visibility: visible;"
         :src="prediction.link"
       ></iframe>
     </div>
@@ -22,6 +21,12 @@ export default {
 };
 </script>
 <style>
+iframe {
+  display: block;
+  width: 1020px;
+  height: 1196px;
+  visibility: visible;
+}
 .graphs-container {
   margin: 2em 0;
 }
